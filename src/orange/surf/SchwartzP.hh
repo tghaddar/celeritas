@@ -31,6 +31,17 @@ class SchwartzP
   public:
     // Construct with defaults
     inline SchwartzP(real_type lx, real_type ly, real_type lz);
+    
+    //// ACCESSORS ////
+
+    //! Unit cell length in x
+    CELER_FUNCTION real_type const& lx() const { return lx_; }
+
+    //! Unit cell length in y
+    CELER_FUNCTION real_type const& ly() const { return ly_; }
+
+    //! Unit cell length in z
+    CELER_FUNCTION real_type const& lz() const { return lz_; }
 
   private:
     // Unit cell length in x

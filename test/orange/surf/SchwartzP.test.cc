@@ -26,6 +26,9 @@ class SchwartzPTest : public ::celeritas::test::Test
 TEST_F(SchwartzPTest, construction)
 {
     SchwartzP s(2.54, 2.53, 2.55);
+    EXPECT_SOFT_EQ(2.54, s.lx());
+    EXPECT_SOFT_EQ(2.53, s.ly());
+    EXPECT_SOFT_EQ(2.55, s.lz());
 }
 
 // TEST_F(SchwartzPTest, TEST_IF_CELER_DEVICE(device))
