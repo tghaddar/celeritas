@@ -6,6 +6,7 @@
 //---------------------------------------------------------------------------//
 #include "SurfaceTranslator.hh"
 
+#include "corecel/Assert.hh"
 #include "corecel/Constants.hh"
 #include "corecel/math/ArrayOperators.hh"
 #include "corecel/math/ArrayUtils.hh"
@@ -211,6 +212,15 @@ Toroid SurfaceTranslator::operator()(Toroid const& other) const
                other.ellipse_z_radius()};
 
     return tor;
+}
+
+//---------------------------------------------------------------------------//
+/*!
+ * Construct a translated SchwartzP.
+ */
+SchwartzP SurfaceTranslator::operator()(SchwartzP const& other) const
+{
+    CELER_NOT_IMPLEMENTED("translated SchwartzP");
 }
 
 //---------------------------------------------------------------------------//

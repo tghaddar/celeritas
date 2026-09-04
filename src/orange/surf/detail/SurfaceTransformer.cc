@@ -22,6 +22,7 @@
 #include "../Sphere.hh"
 #include "../SphereCentered.hh"
 #include "../Toroid.hh"
+#include "../SchwartzP.hh"
 
 namespace celeritas
 {
@@ -241,6 +242,15 @@ Involute SurfaceTransformer::operator()(Involute const&) const
 Toroid SurfaceTransformer::operator()(Toroid const&) const
 {
     CELER_NOT_IMPLEMENTED("transformed toroids");
+}
+
+//---------------------------------------------------------------------------//
+/*!
+ * Transform a SchwartzP.
+ */
+SchwartzP SurfaceTransformer::operator()(SchwartzP const&) const
+{
+    CELER_NOT_IMPLEMENTED("transformed SchwartzP");
 }
 
 //---------------------------------------------------------------------------//

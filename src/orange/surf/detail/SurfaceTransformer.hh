@@ -56,6 +56,8 @@ class SurfaceTransformer
 
     Toroid operator()(Toroid const&) const;
 
+    SchwartzP operator()(SchwartzP const&) const;
+
   private:
     Transformation tr_;
 };
