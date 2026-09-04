@@ -70,6 +70,9 @@ class SchwartzP
     //! Unit cell length in z
     CELER_FUNCTION real_type const& lz() const { return lz_; }
     
+    //! Get a view to the data for type-deleted storage (TODO: CHECK)
+    CELER_FUNCTION StorageSpan data() const { return {&lx_, 3}; }
+    
     //// CALCULATION ////
     
     // Determine the sense of the position relative to this surface
