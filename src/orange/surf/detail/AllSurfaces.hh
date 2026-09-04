@@ -18,3 +18,4 @@
 #include "orange/surf/Sphere.hh"  // IWYU pragma: export
 #include "orange/surf/SphereCentered.hh"  // IWYU pragma: export
 #include "orange/surf/Toroid.hh"  // IWYU pragma: export
+#include "orange/surf/SchwartzP.hh" // IWYU pragma: export

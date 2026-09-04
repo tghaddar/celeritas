@@ -20,6 +20,7 @@ namespace constants
 //!@{
 //! \name Mathemetical constants (truncated)
 CELER_ICC_ pi{3.14159265358979323846};
+CELER_ICC_ twopi{6.28318530717958647692};
 CELER_ICC_ sqrt_pi{1.77245385090551602730};
 
 CELER_ICC_ euler{2.71828182845904523536};

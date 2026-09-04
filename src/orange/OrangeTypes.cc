@@ -171,6 +171,7 @@ char const* to_cstring(SurfaceType value)
         "gq",
         "tor",
         "inv",
+        "tpms",
         // clang-format on
     };
     return to_cstring_impl(value);

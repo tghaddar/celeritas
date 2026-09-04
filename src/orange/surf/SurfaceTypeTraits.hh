@@ -54,6 +54,7 @@ ORANGE_SURFACE_TRAITS(tor, Toroid);
 ORANGE_SURFACE_TRAITS(sq,  SimpleQuadric);
 ORANGE_SURFACE_TRAITS(gq,  GeneralQuadric);
 ORANGE_SURFACE_TRAITS(inv, Involute);
+ORANGE_SURFACE_TRAITS(tpms, SchwartzP);
 // clang-format on
 
 #undef ORANGE_SURFACE_TRAITS
@@ -93,6 +94,7 @@ CELER_CONSTEXPR_FUNCTION decltype(auto) visit_surface_type(F&& func,
         ORANGE_ST_VISIT_CASE(kz);
         ORANGE_ST_VISIT_CASE(sq);
         ORANGE_ST_VISIT_CASE(gq);
+        ORANGE_ST_VISIT_CASE(tpms);
 #if CELERITAS_ORANGE_TORUS
         ORANGE_ST_VISIT_CASE(tor);
 #else

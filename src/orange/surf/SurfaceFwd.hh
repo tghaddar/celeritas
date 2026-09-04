@@ -27,6 +27,7 @@ class SimpleQuadric;
 class Sphere;
 class SphereCentered;
 class Toroid;
+class SchwartzP;
 
 //---------------------------------------------------------------------------//
 }  // namespace celeritas

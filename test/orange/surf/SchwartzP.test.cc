@@ -31,6 +31,13 @@ TEST_F(SchwartzPTest, construction)
     EXPECT_SOFT_EQ(2.55, s.lz());
 }
 
+TEST_F(SchwartzPTest, basic)
+{
+    SchwartzP s(2.54, 2.54, 2.54);
+    EXPECT_EQ(SignedSense::inside, s.calc_sense({0.0, 0.0, 0.0}));
+    EXPECT_EQ(SignedSense::outside, s.calc_sense({2.54, 0.0, 0.0}));
+}
+
 // TEST_F(SchwartzPTest, TEST_IF_CELER_DEVICE(device))
 // {
 //     SPTestInput input;
