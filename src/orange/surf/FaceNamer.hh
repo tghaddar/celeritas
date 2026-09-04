@@ -90,6 +90,8 @@ class FaceNamer
         std::string operator()(Involute const&) const;
 
         std::string operator()(Toroid const&) const;
+        
+        std::string operator()(SchwartzP const&) const;
     };
 };
 

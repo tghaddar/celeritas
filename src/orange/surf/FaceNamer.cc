@@ -169,4 +169,13 @@ std::string FaceNamer::Impl::operator()(Toroid const&) const
 }
 
 //---------------------------------------------------------------------------//
+/*!
+ * Construct a name for a SchwartzP.
+ */
+std::string FaceNamer::Impl::operator()(SchwartzP const&) const
+{
+    return "schwartzp";
+}
+
+//---------------------------------------------------------------------------//
 }  // namespace celeritas

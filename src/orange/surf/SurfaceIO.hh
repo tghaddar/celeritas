@@ -42,6 +42,8 @@ std::ostream& operator<<(std::ostream&, Sphere const&);
 std::ostream& operator<<(std::ostream&, SphereCentered const&);
 
 std::ostream& operator<<(std::ostream&, Toroid const&);
+
+std::ostream& operator<<(std::ostream&, SchwartzP const&);
 //!@}
 //---------------------------------------------------------------------------//
 }  // namespace celeritas

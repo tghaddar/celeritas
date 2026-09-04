@@ -23,6 +23,7 @@
 #include "Sphere.hh"  // IWYU pragma: associated
 #include "SphereCentered.hh"  // IWYU pragma: associated
 #include "Toroid.hh"  // IWYU pragma: associated
+#include "SchwartzP.hh"  // IWYU pragma: associated
 
 namespace celeritas
 {
@@ -131,6 +132,13 @@ std::ostream& operator<<(std::ostream& os, Toroid const& tor)
     os << "Toroid: r=" << tor.major_radius()
        << ", a=" << tor.ellipse_xy_radius() << ", b=" << tor.ellipse_z_radius()
        << ", at o=" << tor.origin();
+    return os;
+}
+
+//---------------------------------------------------------------------------//
+std::ostream& operator<<(std::ostream& os, SchwartzP const& s)
+{
+    os << "ShwartzP: lx=" << s.lx() << ", ly=" << s.ly() << ", lz=" << s.lz();
     return os;
 }
 
